@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6000BCD4"
+    tools:context=".Game">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/infoBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/bottomRight"
+        android:layout_width="129dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bottomCenter"
+        app:layout_constraintTop_toBottomOf="@+id/middleRight"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/middleLeft"
+        android:layout_width="125dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/middleCenter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLeft"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/middleCenter"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/middleRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/middleLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topCenter"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/middleRight"
+        android:layout_width="126dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/middleCenter"
+        app:layout_constraintTop_toBottomOf="@+id/topRight"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/bottomLeft"
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/bottomCenter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middleLeft"
+        app:layout_constraintVertical_bias="0.312"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/bottomCenter"
+        android:layout_width="0dp"
+        android:layout_height="116dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/bottomRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bottomLeft"
+        app:layout_constraintTop_toBottomOf="@+id/middleCenter"
+        app:layout_constraintVertical_bias="0.244"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/topLeft"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/topCenter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/topRight"
+        android:layout_width="118dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/topCenter"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/topCenter"
+        android:layout_width="121dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/topRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/topLeft"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/infoBox"
+        android:layout_width="401dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:textAlignment="center"
+        app:flow_horizontalAlign="end"
+        app:flow_verticalAlign="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/nowin" />
+
+    <Button
+        android:id="@+id/playAgainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:text="Play Again"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoBox" />
+
+    <ImageView
+        android:id="@+id/markImg"
+        android:layout_width="393dp"
+        android:layout_height="401dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/empty" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
